@@ -29,7 +29,7 @@ frontend avec Next.js.
 1. Clonez ce dépôt
 2. Installez les dépendances : `npm install`
 3. Configurez votre base de données MySQL
-4. Créez un `.env` (ex : DB_HOST=localhost, DB_PORT=3306, DB_USERNAME=exemple, DB_PASSWORD=exemple, DB_DATABASE=test-tkorp)
+4. Modifiez le fichier .env.example en .env (Les données sont en clair pour le test technique ; sinon, ce sont des données cachées).
 5. Exécutez les migrations : `npm run migration:run`
 6. Lancez l'application : `npm run start:dev`
 7. L'API sera disponible à l'adresse : `http://localhost:3000`
