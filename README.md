@@ -56,10 +56,6 @@ Vous pouvez récupérer la partie front ici : https://github.com/ThimotheeT/tkor
 
 Ce projet a été réalisé en approximativement 5 heures.
 
-# Auteur
-
-Terrassier Thimothée
-
 # Remarques
 
 Ce projet a été développé dans le cadre d'un test technique.
