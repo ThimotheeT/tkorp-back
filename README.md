@@ -28,9 +28,11 @@ frontend avec Next.js.
 
 1. Clonez ce dépôt
 2. Installez les dépendances : `npm install`
-3. Configurez votre base de données MySQL
+3. Lancez un serveur MySQL (par exemple, XAMPP).
+   Accédez à phpMyAdmin ou à un autre outil de gestion de base de données MySQL.
+   Créez une nouvelle base de données nommée "test-tkorp".
 4. Modifiez le fichier .env.example en .env (Les données sont en clair pour le test technique ; sinon, ce sont des données cachées).
-5. Exécutez les migrations : `npm run migration:run`
+5. Collez le contenu du fichier src/database/init.sql dans le formulaire de requête de phpMyAdmin.
 6. Lancez l'application : `npm run start:dev`
 7. L'API sera disponible à l'adresse : `http://localhost:3000`
 
@@ -54,7 +56,7 @@ Vous pouvez récupérer la partie front ici : https://github.com/ThimotheeT/tkor
 
 # Temps de Réalisation
 
-Ce projet a été réalisé en approximativement 5 heures.
+Ce projet a été réalisé en approximativement 8 heures.
 
 # Remarques
 

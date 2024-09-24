@@ -1,5 +1,5 @@
 -- Création des tables
-CREATE TABLE person (
+CREATE TABLE IF NOT EXISTS person (
     id SERIAL PRIMARY KEY,
     lastName VARCHAR(100) NOT NULL,
     firstName VARCHAR(100) NOT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE person (
     phoneNumber VARCHAR(20)
 );
 
-CREATE TABLE animal (
+CREATE TABLE IF NOT EXISTS animal (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     dateOfBirth DATE,
@@ -15,8 +15,7 @@ CREATE TABLE animal (
     breed VARCHAR(100),
     color VARCHAR(50),
     weight DECIMAL(10,2),
-    ownerId INT,
-    FOREIGN KEY (ownerId) REFERENCES person(id)
+    ownerId INT REFERENCES person(id),
 );
 
 -- Insertion de données de test
