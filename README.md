@@ -17,6 +17,7 @@ frontend avec Next.js.
 - NestJS pour le backend
 - MySQL pour la base de données
 - TypeORM pour l'ORM
+- GraphQL pour les requêtes
 
 # Prérequis
 
@@ -34,7 +35,7 @@ frontend avec Next.js.
 4. Modifiez le fichier .env.example en .env (Les données sont en clair pour le test technique ; sinon, ce sont des données cachées).
 5. Collez le contenu du fichier src/database/init.sql dans le formulaire de requête de phpMyAdmin.
 6. Lancez l'application : `npm run start:dev`
-7. L'API sera disponible à l'adresse : `http://localhost:3000`
+7. L'API sera disponible à l'adresse : `http://localhost:3000/`+`persons` ou `animals`
 
 # Partie Front 
 
@@ -45,7 +46,7 @@ Vous pouvez récupérer la partie front ici : https://github.com/ThimotheeT/tkor
 - `src/` : Code source de l'application
 - `person/` : Contrôleurs de l'API, Services métier, Entités de la base de données
 - `animal/` : Contrôleurs de l'API, Services métier, Entités de la base de données
-- `database/` : Scripts SQL et migrations
+- `database/` : Scripts SQL 
 
 # Endpoints principaux
 
@@ -53,6 +54,7 @@ Vous pouvez récupérer la partie front ici : https://github.com/ThimotheeT/tkor
 - GET /persons/:id : Détails d'une personne spécifique
 - GET /animals : Liste tous les animaux
 - GET /animals/:id : Détails d'un animal spécifique
+- /graphql : GraphQL Playground
 
 # Temps de Réalisation
 
@@ -61,3 +63,7 @@ Ce projet a été réalisé en approximativement 8 heures.
 # Remarques
 
 Ce projet a été développé dans le cadre d'un test technique.
+
+# Questions 
+
+Vous trouverez toutes les réponses aux questions posées dans le sujet du test dans le fichier texte : réponses.txt.

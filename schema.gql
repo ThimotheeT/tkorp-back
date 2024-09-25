@@ -27,11 +27,43 @@ type Person {
   animals: [Animal!]
 }
 
+type SpeciesCount {
+  species: String!
+  count: Int!
+}
+
+type PersonWithMostAnimals {
+  person: Person!
+  animalCount: Int!
+}
+
+type PersonWithMostCats {
+  person: Person!
+  catCount: Int!
+}
+
+type HeaviestAnimalWithOwner {
+  animal: Animal!
+  owner: Person!
+}
+
+type OwnerWithHeaviestAnimals {
+  owner: Person!
+  totalWeight: Float!
+  animals: [Animal!]!
+}
+
 type Query {
   persons: [Person!]!
   person(id: Float!): Person!
   animals: [Animal!]!
   animal(id: Float!): Animal!
+  oldestAnimal: Animal!
+  animalsCountBySpecies: [SpeciesCount!]!
+  personWithMostAnimals: PersonWithMostAnimals!
+  personWithMostCats: PersonWithMostCats!
+  heaviestAnimalWithOwner: HeaviestAnimalWithOwner!
+  ownerWithHeaviestAnimals: OwnerWithHeaviestAnimals!
 }
 
 type Mutation {

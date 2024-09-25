@@ -1,0 +1,114 @@
+Quel animal est le plus vieux ? Rocky id:934
+
+localhost:3000/graphql : 
+
+{
+  oldestAnimal {
+    id
+    name
+    species
+    dateOfBirth
+    owner {
+      id
+      firstName
+      lastName
+    }
+  }
+} 
+
+Quelle espèce est la mieux représentée ? Bird:179
+
+localhost:3000/graphql : 
+
+{
+  animalsCountBySpecies {
+    species
+    count
+  }
+}
+
+Quelle personne possède le plus d’animaux ? Michael Taylor id:208 6 animaux
+
+localhost:3000/graphql :
+
+{
+  personWithMostAnimals {
+    person {
+      id
+      firstName
+      lastName
+      email
+      phoneNumber
+      animals {
+        id
+        name
+      }
+    }
+    animalCount
+  }
+}
+
+Quelle personne possède le plus de chats ? Sarah White id:268 4 chats
+
+localhost:3000/graphql :
+
+{
+  personWithMostCats {
+    person {
+      id
+      firstName
+      lastName
+      email
+      phoneNumber
+      animals {
+        id
+        name
+        species
+      }
+    }
+    catCount
+  }
+}
+
+Qui possède l’animal le plus lourd ? Comment s’appelle cet animal et quel est
+son poids ? Emma Smith id:209 Chloe id:821 49,937kg
+
+localhost:3000/graphql :
+
+{
+  heaviestAnimalWithOwner {
+    animal {
+      id
+      name
+      species
+      weight
+    }
+    owner {
+      id
+      firstName
+      lastName
+    }
+  }
+}
+
+Qui possède le groupe d’animaux le plus lourd ? Quel est le poids total de ce
+groupe d’animaux ? Sophia Brown id:18 poids total de : 172,152kg
+
+localhost:3000/graphql :
+
+{
+  ownerWithHeaviestAnimals {
+    owner {
+      id
+      firstName
+      lastName
+    }
+    totalWeight
+    animals {
+      id
+      name
+      species
+      weight
+    }
+  }
+}

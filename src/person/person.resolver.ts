@@ -25,6 +25,4 @@ export class PersonResolver {
   ) {
     return this.personService.create({ lastName, firstName, email, phoneNumber });
   }
-
-  // Ajoutez d'autres mutations selon vos besoins (update, delete, etc.)
 }

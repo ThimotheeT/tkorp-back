@@ -22,8 +22,6 @@ export class PersonService {
     const newPerson = this.personRepository.create(personData);
     return this.personRepository.save(newPerson);
   }
-
-  // Vous pouvez ajouter d'autres méthodes selon vos besoins, par exemple :
   
   async update(id: number, personData: Partial<Person>): Promise<Person> {
     await this.personRepository.update(id, personData);
